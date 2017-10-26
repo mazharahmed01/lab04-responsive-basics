@@ -3,7 +3,7 @@
 body {
   margin:0;
   padding:0;
-  background: #222;
+  background: blue;
 }
 header {
   background: #ccc;
@@ -28,10 +28,36 @@ main {
 section {
   font-size: 1em;
   background: #888;
-  width: 22%;
   margin: 1em 1% 1em 1%;
-  display: inline-block;
 }
 section:hover {
   background: #666;
 }
+
+/* FIRST BREAKPOINT (MEDIUM SIZE) */
+@media screen and (min-width: 500px) {
+  body{
+	  background: orange;
+    font-family: Helvetica;
+  }
+  section {
+    display: inline-block;
+    width: 45%;
+  }
+}
+/* END FIRST BREAKPOINT */
+
+
+/* SECOND BREAKPOINT (DESKTOP SIZE) */
+@media screen and (min-width: 1000px) {
+  body{
+	  background: #559;
+    font-family: Palatino;
+  }
+  section {
+    display: inline-block;
+    width: 22%;
+  }
+}
+/* END SECOND BREAKPOINT */
+
